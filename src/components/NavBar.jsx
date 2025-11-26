@@ -1,4 +1,3 @@
-import React from 'react'
 import { Layout, Input, Badge, Button } from '@arco-design/web-react'
 import { IconArchive, IconLeft } from '@arco-design/web-react/icon'
 import { useNavigate, useLocation } from 'react-router-dom'

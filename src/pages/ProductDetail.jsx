@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useStore } from '../store/useStore'
 import NavBar from '../components/NavBar'

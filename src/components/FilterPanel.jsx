@@ -1,5 +1,3 @@
-// ...existing code...
-import React from 'react'
 import { Select, InputNumber, Button } from '@arco-design/web-react'
 import { useStore } from '../store/useStore'
 
@@ -126,4 +124,3 @@ export default function FilterPanel(){
     </>
   )
 }
-// ...existing code...

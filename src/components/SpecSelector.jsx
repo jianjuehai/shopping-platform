@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Radio, InputNumber, Button, Typography, Divider } from '@arco-design/web-react'
 
 const { Text } = Typography
@@ -56,7 +56,6 @@ export default function SpecSelector({ product, onAdd }) {
         <Radio.Group
           value={selected?.skuId}
           onChange={handleChangeSku}
-          type="button"          // 如果不想要按钮样式，可以删掉这一行
           style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}
         >
           {product.skuList.map(s => (
@@ -81,10 +80,11 @@ export default function SpecSelector({ product, onAdd }) {
         <Text style={{ fontWeight: 600 }}>数量</Text>
         <InputNumber
           size="large"
+          mode='button'
           min={1}
           value={qty}
           onChange={setQty}
-          style={{ width: 60 }}
+          style={{ width: 120 }}
         />
       </div>
 

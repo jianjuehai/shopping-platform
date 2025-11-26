@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import { useMemo } from 'react'
 import { Grid } from '@arco-design/web-react'
 import NavBar from '../components/NavBar'
 import ProductCard from '../components/ProductCard'
