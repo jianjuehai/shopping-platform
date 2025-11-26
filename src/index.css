@@ -1,13 +1,8 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* 简单全局与响应式风格，建议按需扩展或使用 Tailwind */
+body { margin:0; font-family: Inter, system-ui, -apple-system, 'Helvetica Neue', Arial; }
+.app-container { min-height:100vh; display:flex; flex-direction:column; }
+.content { padding:16px; max-width:1200px; margin:0 auto; width:100%; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+/* 响应式示例 */
+@media (max-width: 768px) { .content { padding: 12px; } }
